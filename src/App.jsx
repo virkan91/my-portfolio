@@ -9,12 +9,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
 
+import { CiMail } from "react-icons/ci";
+
 // import img
 import icon1 from "./assets/icons.svg";
 import icon2 from "./assets/icons2.svg";
 import icon3 from "./assets/icon3.png";
 import icon4 from "./assets/icons4.svg";
-import about from "./assets/about-img.webp"
+import about from "./assets/about-img.webp";
+import snimok from "./assets/snimok.png";
+import two from "./assets/two.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -42,10 +46,10 @@ function App() {
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
           <div className="sm:flex sm:flex-col md:flex md:flex-row justify-between ">
             <div className="">
-              <h1 className="text-[50px] md:text-[64px] text-center md:text-start">
+              <h1 className="text-[50px] md:text-[53px] text-center md:text-start font-bold">
                 Front-End React Developer
               </h1>
-              <p className="mt-[30px] text-[#555] text-[18px] max-w-[400px] text-center md:text-start">
+              <p className="mt-[30px] text-[#555] text-[18px] max-w-[480px] text-center md:text-start">
                 Hi, I'm Virkan Shirinov. A passionate Front-end React Developer
                 based in Russia, Moscow.
               </p>
@@ -73,15 +77,20 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="bg-[#FFFFFF] pt-[50px]">
+      <section className="section_2 bg-[#FFFFFF] py-[70px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
-          <div className="grid md:grid-cols-2 gap-[110px] grid-col-1">
+          <div className="grid md:grid-cols-2 gap-[90px] grid-col-1">
             <div className="rounded-[20px]">
-              <img src={about} alt="" className="rounded-[30px]"  />
+              <img src={about} alt="" className="rounded-[30px]" />
             </div>
-            <div>
-              <h2>About</h2>
-              <p>
+            <div className="p-[0px_20px]">
+              <h2 className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
+                ABOUT ME
+              </h2>
+              <p className="text-[#2d2e32] text-[22px] font-bold leading-8 text-center md:text-start">
+                A dedicated Front-end Developer based in Russia, Moscow{" "}
+              </p>
+              <p className="text-[#767676] text-center md:text-start">
                 As a Junior Front-End Developer, I possess an impressive arsenal
                 of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
                 excel in designing and maintaining responsive websites that
@@ -96,6 +105,143 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="section_3 bg-[#f9f9f9] py-[70px]">
+        <div className="container max-w-[1100px] mx-auto p-[12px]">
+          <div className="mb-[50px] ">
+            <p className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
+              PORTFOLIO
+            </p>
+            <p className="text-[#2d2e32] text-[22px] font-bold leading-8 text-center md:text-start mt-[10px]">
+              Each project is a unique piece of development 🧩
+            </p>
+          </div>
+          <div className="flex flex-col gap-14">
+            <div className="projects flex-col md:flex md:flex-row">
+              <div>
+                <img src={snimok} alt="" className="rounded-[20px]" />
+              </div>
+              <div className="flex flex-col gap-5">
+                <h2>Emet (FEBRUARY 2023)</h2>
+                <p>
+                  A car rental website is an online platform that allows users
+                  to rent cars for personal or business use. The website
+                  provides an interface for searching, comparing, and reserving
+                  cars.
+                </p>
+                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
+                    Resct
+                  </p>
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
+                    SASS
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="projects flex-col md:flex md:flex-row">
+              <div>
+                <img src={two} alt="" className="rounded-[20px]" />
+              </div>
+              <div className="flex flex-col gap-5">
+                <h2>COINDOM (FEBRUARY 2023)</h2>
+                <p>
+                  Coindom is a crypto app that allows users to search for
+                  information about various cryptocurrencies in real-time.
+                </p>
+                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
+                    Resct
+                  </p>
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
+                    Tailwind CSS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="projects">
+              <div>dfdfdf</div>
+              <div>dfdfdf</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="contact bg-[#FFFFFF] py-[70px]">
+        <div className="container max-w-[1100px] mx-auto p-[12px]">
+          <p className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
+            CONTACT
+          </p>
+          <h2 className="text-[#2d2e32] text-[24px] font-bold mt-[10px] text-center md:text-start">
+            Don't be shy! Hit me up! 👇
+          </h2>
+          <div className="mt-[50px] flex gap-20 flex-col md:flex-row items-center ">
+            <div className="flex gap-4 flex-col md:flex-row items-center">
+              <span className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="tabler-icon tabler-icon-map-search"
+                >
+                  <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
+                  <path d="M9 4v13"></path>
+                  <path d="M15 7v5"></path>
+                  <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                  <path d="M20.2 20.2l1.8 1.8"></path>
+                </svg>
+              </span>
+              <div>
+                <h4 className="font-bold text-center md:text-start">
+                  Location
+                </h4>
+                <a>Russia, Moscow</a>
+              </div>
+            </div>
+            <div className="flex gap-4 flex-col md:flex-row items-center">
+              <span className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="tabler-icon tabler-icon-mail"
+                >
+                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                  <path d="M3 7l9 6l9 -6"></path>
+                </svg>
+              </span>
+              <div>
+                <h4 className="font-bold text-center md:text-start">Mail</h4>
+                <a>virkan@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="bg-[#2d2e32] p-[40px]">
+        <div className="container max-w-[1100px] mx-auto p-[12px]">
+          <div className="flex md:justify-between items-center flex-col md:flex-row justify-center">
+            <h3 className="text-[#FFF] font-bold text-[16px]">
+              Copyright © 2023. All rights are reserved
+            </h3>
+            <div className="flex gap-2 items-center mt-[30px] md:mt-auto">
+              <LinkedInIcon className="text-[#FFF]" />
+              <GitHubIcon className="text-[#FFF]" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
