@@ -17,8 +17,8 @@ import icon2 from "./assets/icons2.svg";
 import icon3 from "./assets/icon3.png";
 import icon4 from "./assets/icons4.svg";
 import about from "./assets/about-img.webp";
-import snimok from "./assets/snimok.png";
-import two from "./assets/two.png";
+import emat from "./assets/emat.png";
+import two from "./assets/olis.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -57,7 +57,7 @@ function App() {
                 <LinkedInIcon />
                 <GitHubIcon />
                 <MailOutlineIcon />
-                <a href="@virkan91">
+                <a target="_blank" href="@virkan91">
                   <TelegramIcon />
                 </a>
               </div>
@@ -117,8 +117,10 @@ function App() {
           </div>
           <div className="flex flex-col gap-14">
             <div className="projects flex-col md:flex md:flex-row">
-              <div>
-                <img src={snimok} alt="" className="rounded-[20px]" />
+              <div className="box_scrol rounded-[20px]">
+                <a target="_blank" href="https://emat.netlify.app/">
+                  <img src={emat} alt="" className=" scrol_bar " />
+                </a>
               </div>
               <div className="flex flex-col gap-5">
                 <h2>Emet (FEBRUARY 2023)</h2>
@@ -130,19 +132,19 @@ function App() {
                 </p>
                 <div className="flex justify-center gap-4 items-center mt-[20px]">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
-                    Resct
+                    React
                   </p>
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
-                    SASS
+                    Tailwind CSS
+                  </p>
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
+                    React-router
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="projects flex-col md:flex md:flex-row">
-              <div>
-                <img src={two} alt="" className="rounded-[20px]" />
-              </div>
               <div className="flex flex-col gap-5">
                 <h2>COINDOM (FEBRUARY 2023)</h2>
                 <p>
@@ -157,6 +159,9 @@ function App() {
                     Tailwind CSS
                   </p>
                 </div>
+              </div>
+              <div className="box_scrol rounded-[20px] ">
+                <img src={two} alt="" className="rounded-[20px] scrol_bar" />
               </div>
             </div>
             <div className="projects">

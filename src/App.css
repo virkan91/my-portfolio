@@ -66,3 +66,15 @@ p {
   font-size: 18px;
   text-decoration: none;
 }
+.box_scrol{
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.scrol_bar{
+  transform: translateY(0%);
+  transition: 10s ease-in-out 0s;
+}
+.scrol_bar:hover{
+  transform: translateY(-70%);
+}
