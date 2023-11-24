@@ -122,7 +122,7 @@ function App() {
               Each project is a unique piece of development 🧩
             </p>
           </div>
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-[60px]">
             <div className="projects flex-col md:flex md:flex-row">
               <div className="box_scrol rounded-[20px]">
                 <a target="_blank" href="https://emat.netlify.app/">
