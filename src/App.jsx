@@ -8,6 +8,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import { IoIosMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 
 import { CiMail } from "react-icons/ci";
 
@@ -19,32 +21,37 @@ import icon4 from "./assets/icons4.svg";
 import about from "./assets/about-img.webp";
 import emat from "./assets/emat.png";
 import two from "./assets/olis.png";
+import snimok3 from "./assets/snimok3.png";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  const [modalMenu, setModalMenu] = useState(false);
+
   return (
     <div className="bg-[#f9f9f9]">
-      <header className="shadow-md  bg-[#FFF]">
-        <div className="container max-w-[1100px] mx-auto flex justify-between items-center p-[12px]">
-          <div className="logo cursor-pointer font-medium text-[30px]">
+      <header className="shadow-md   fixed z-30 w-full top-0 bg_header">
+        <div className="container max-w-[1100px] mx-auto flex justify-between items-center p-[12px] px-[25px] ">
+          <div className="logo cursor-pointer font-medium text-[24px]">
             Virkan.dev
           </div>
-          <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden">
-            <li>Home</li>
+          <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden ">
+            <li className="">Home</li>
             <li>About</li>
             <li>Projects</li>
             <li>Contact</li>
           </ul>
           {/* mobal-menu */}
-          <div className="md:hidden">
-            <MenuIcon />
+          <div
+            onClick={() => setModalMenu(true)}
+            className="md:hidden cursor-pointer ">
+            <IoIosMenu className="text-[38px] mobal_menu" />
           </div>
         </div>
       </header>
-      <section>
+      <section className=" drop-shadow-md">
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
-          <div className="sm:flex sm:flex-col md:flex md:flex-row justify-between ">
+          <div className="sm:flex sm:flex-col md:flex md:flex-row justify-between mt-[80px]">
             <div className="">
               <h1 className="text-[50px] md:text-[53px] text-center md:text-start font-bold">
                 Front-End React Developer
@@ -109,7 +116,7 @@ function App() {
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <div className="mb-[50px] ">
             <p className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
-              PORTFOLIO
+              MY PROJECTS
             </p>
             <p className="text-[#2d2e32] text-[22px] font-bold leading-8 text-center md:text-start mt-[10px]">
               Each project is a unique piece of development 🧩
@@ -141,6 +148,16 @@ function App() {
                     React-router
                   </p>
                 </div>
+                <div className="flex gap-2 items-center justify-center mt-[40px]">
+                  <a
+                    target="_blank"
+                    href="https://github.com/virkan91/emat"
+                    className="hover:text-[blue] font-medium"
+                  >
+                    Code
+                  </a>
+                  <GitHubIcon />
+                </div>
               </div>
             </div>
 
@@ -159,14 +176,54 @@ function App() {
                     Tailwind CSS
                   </p>
                 </div>
+                <div className="flex gap-2 items-center justify-center mt-[40px]">
+                  <a
+                    target="_blank"
+                    href="https://github.com/virkan91/emat"
+                    className="hover:text-[blue] font-medium"
+                  >
+                    Code
+                  </a>
+                  <GitHubIcon />
+                </div>
               </div>
               <div className="box_scrol rounded-[20px] ">
                 <img src={two} alt="" className="rounded-[20px] scrol_bar" />
               </div>
             </div>
-            <div className="projects">
-              <div>dfdfdf</div>
-              <div>dfdfdf</div>
+            <div className="projects flex-col md:flex md:flex-row">
+              <div className="box_scrol rounded-[20px] ">
+                <img
+                  src={snimok3}
+                  alt=""
+                  className="rounded-[20px] scrol_bar"
+                />
+              </div>
+              <div className="flex flex-col gap-5">
+                <h2>Product (FEBRUARY 2023)</h2>
+                <p>
+                  Coindom is a crypto app that allows users to search for
+                  information about various cryptocurrencies in real-time.
+                </p>
+                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
+                    Resct
+                  </p>
+                  <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
+                    Tailwind CSS
+                  </p>
+                </div>
+                <div className="flex gap-2 items-center justify-center mt-[40px]">
+                  <a
+                    target="_blank"
+                    href="https://github.com/virkan91/emat"
+                    className="hover:text-[blue] font-medium"
+                  >
+                    Code
+                  </a>
+                  <GitHubIcon />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -247,6 +304,34 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/*modalmenu */}
+      {modalMenu && (
+        <div className="fixed z-30 top-0 w-full h-screen overflow-y-hidden bg-[#FFF] py-[9px] px-[35px]">
+          <div className=" flex justify-end">
+            <button
+              onClick={() => setModalMenu(false)}
+              className="text-[32px] hover:text-[#000] hover:scale-[0.90] duration-200"
+            >
+              <IoClose className="close-menu" />
+            </button>
+          </div>
+          <ul className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  " >
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Project</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
