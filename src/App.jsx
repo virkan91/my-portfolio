@@ -295,7 +295,7 @@ function App() {
       <footer className="bg-[#2d2e32] p-[40px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <div className="flex md:justify-between items-center flex-col md:flex-row justify-center">
-            <h3 className="text-[#FFF] font-bold md:text-[16px] text-[12px]">
+            <h3 className="text-[#FFF] font-bold md:text-[16px] text-[10px]">
               Copyright © 2023. All rights are reserved
             </h3>
             <div className="flex gap-2 items-center mt-[30px] md:mt-auto">
