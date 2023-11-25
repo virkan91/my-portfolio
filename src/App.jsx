@@ -72,7 +72,7 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="avatar mt-[50px] md:mt-auto mx-auto"></div>
+            <div className="avatar mt-[50px] md:mt-auto mx-auto "></div>
           </div>
           <div className="flex gap-14 items-center py-[40px] flex-col md:flex-row">
             <div>
@@ -164,8 +164,8 @@ function App() {
               </div>
             </div>
 
-            <div className="projects flex-col md:flex md:flex-row mt-[30px]">
-              <div className="flex flex-col gap-5 mt-[30px] md:mt-0">
+            <div className="projects flex-col-reverse md:flex md:flex-row mt-[30px] ">
+              <div className="flex flex-col  gap-5 mt-[30px] md:mt-0">
                 <h2>COINDOM (FEBRUARY 2023)</h2>
                 <p>
                   Coindom is a crypto app that allows users to search for
