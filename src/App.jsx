@@ -138,7 +138,7 @@ function App() {
                   provides an interface for searching, comparing, and reserving
                   cars...
                 </p>
-                <div className="flex justify-center gap-4 items-center mt-[20px] flex-col md:flex-row">
+                <div className="flex justify-center gap-[10px] items-center mt-[20px] flex-col md:flex-row">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
                     React
                   </p>
