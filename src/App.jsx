@@ -78,7 +78,7 @@ function App() {
             <div>
               <h3 className="text-[20px] font-medium ">Технический стек</h3>
             </div>
-            <div className="grid grid-cols-4 gap-8 items-center">
+            <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] rounded-[10px]">
               <img src={icon1} alt="" />
               <img src={icon4} alt="" />
               <img src={icon2} alt="" />
@@ -210,7 +210,7 @@ function App() {
                 </p>
                 <div className="flex justify-center gap-4 items-center mt-[20px] flex-col md:flex-row">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
-                    Resct
+                    React
                   </p>
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
                     Tailwind CSS
