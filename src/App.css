@@ -39,6 +39,10 @@ body {
   background-size: cover;
   background-position: 50% 50%;
 }
+.skils {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 section h1 {
   color: #2d2e32;
   line-height: 1.1;

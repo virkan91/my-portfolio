@@ -78,7 +78,7 @@ function App() {
             <div>
               <h3 className="text-[20px] font-medium ">Технический стек</h3>
             </div>
-            <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] rounded-[10px]">
+            <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] skils">
               <img src={icon1} alt="" />
               <img src={icon4} alt="" />
               <img src={icon2} alt="" />
