@@ -56,7 +56,7 @@ function App() {
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
           <div className="flex flex-col-reverse md:flex md:flex-row justify-between mt-[10px]  md:mt-[80px]  ">
             <div className="">
-              <h1 className="text-[30px] md:text-[53px] text-center md:text-start font-bold mt-[40px] md:mt-0 ">
+              <h1 className="text-[38px] md:text-[53px] text-center md:text-start font-bold mt-[40px] md:mt-0 ">
                 Front-End React Developer
               </h1>
               <p className="mt-[30px] text-[#555] text-[18px] max-w-[480px] text-center md:text-start">
