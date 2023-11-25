@@ -32,8 +32,10 @@ function App() {
     <div className="bg-[#f9f9f9]">
       <header className="shadow-md   fixed z-30 w-full top-0 bg_header">
         <div className="container max-w-[1100px] mx-auto flex justify-between items-center p-[12px] px-[25px] ">
-          <div className="logo cursor-pointer font-medium text-[24px]">
-            Virkan.dev
+          <div className="logo">
+            <h2 className="cursor-pointer font-medium md:text-[24px] text-[20px]">
+              Virkan.dev
+            </h2>
           </div>
           <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden ">
             <li className="">Home</li>
