@@ -54,9 +54,9 @@ function App() {
       </header>
       <section className=" drop-shadow-md">
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
-          <div className="flex flex-col-reverse md:flex md:flex-row justify-between mt-[10px]  md:mt-[80px] gap-[50px] ">
+          <div className="flex flex-col-reverse md:flex md:flex-row justify-between mt-[10px]  md:mt-[80px]  ">
             <div className="">
-              <h1 className="text-[50px] md:text-[53px] text-center md:text-start font-bold ">
+              <h1 className="text-[50px] md:text-[53px] text-center md:text-start font-bold mt-[40px] md:mt-0 ">
                 Front-End React Developer
               </h1>
               <p className="mt-[30px] text-[#555] text-[18px] max-w-[480px] text-center md:text-start">
@@ -75,7 +75,7 @@ function App() {
             <div className="avatar mt-[50px] md:mt-auto mx-auto "></div>
           </div>
           <div className="flex gap-[15px]  items-center py-[40px] flex-col md:flex-row">
-            <h3 className="text-[20px] font-medium ">Технический стек</h3>
+            <h3 className="text-[20px] font-medium mb-[10px]">Технический стек</h3>
 
             <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] skils">
               <img src={icon1} alt="" />
