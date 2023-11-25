@@ -130,7 +130,7 @@ function App() {
                   <img src={emat} alt="" className=" scrol_bar " />
                 </a>
               </div>
-              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-0">
                 <h2>Emet (FEBRUARY 2023)</h2>
                 <p>
                   A car rental website is an online platform that allows users
@@ -163,7 +163,7 @@ function App() {
             </div>
 
             <div className="projects flex-col md:flex md:flex-row mt-[30px]">
-              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-0">
                 <h2>COINDOM (FEBRUARY 2023)</h2>
                 <p>
                   Coindom is a crypto app that allows users to search for
@@ -200,7 +200,7 @@ function App() {
                   className="rounded-[20px] scrol_bar"
                 />
               </div>
-              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-0">
                 <h2>Product (FEBRUARY 2023)</h2>
                 <p>
                   Coindom is a crypto app that allows users to search for
