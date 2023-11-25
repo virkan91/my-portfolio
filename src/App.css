@@ -55,7 +55,6 @@ section h1 {
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  gap: 50px;
   justify-content: space-between;
   padding: 20px;
 }

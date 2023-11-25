@@ -44,7 +44,8 @@ function App() {
           {/* mobal-menu */}
           <div
             onClick={() => setModalMenu(true)}
-            className="md:hidden cursor-pointer ">
+            className="md:hidden cursor-pointer "
+          >
             <IoIosMenu className="text-[38px] mobal_menu" />
           </div>
         </div>
@@ -122,8 +123,8 @@ function App() {
               Each project is a unique piece of development 🧩
             </p>
           </div>
-          <div className="flex flex-col gap-[60px] md:gap-[30px]">
-            <div className="projects flex-col md:flex md:flex-row">
+          <div className="flex flex-col">
+            <div className="projects flex-col md:flex md:flex-row ">
               <div className="box_scrol rounded-[20px]">
                 <a target="_blank" href="https://emat.netlify.app/">
                   <img src={emat} alt="" className=" scrol_bar " />
@@ -135,7 +136,7 @@ function App() {
                   A car rental website is an online platform that allows users
                   to rent cars for personal or business use. The website
                   provides an interface for searching, comparing, and reserving
-                  cars.
+                  cars...
                 </p>
                 <div className="flex justify-center gap-4 items-center mt-[20px]">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
@@ -161,7 +162,7 @@ function App() {
               </div>
             </div>
 
-            <div className="projects flex-col md:flex md:flex-row">
+            <div className="projects flex-col md:flex md:flex-row mt-[30px]">
               <div className="flex flex-col gap-5">
                 <h2>COINDOM (FEBRUARY 2023)</h2>
                 <p>
@@ -191,7 +192,7 @@ function App() {
                 <img src={two} alt="" className="rounded-[20px] scrol_bar" />
               </div>
             </div>
-            <div className="projects flex-col md:flex md:flex-row">
+            <div className="projects flex-col md:flex md:flex-row mt-[30px]">
               <div className="box_scrol rounded-[20px] ">
                 <img
                   src={snimok3}
@@ -316,7 +317,7 @@ function App() {
               <IoClose className="close-menu" />
             </button>
           </div>
-          <ul className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  " >
+          <ul className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  ">
             <li>
               <a href="">Home</a>
             </li>
