@@ -130,7 +130,7 @@ function App() {
                   <img src={emat} alt="" className=" scrol_bar " />
                 </a>
               </div>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
                 <h2>Emet (FEBRUARY 2023)</h2>
                 <p>
                   A car rental website is an online platform that allows users
@@ -138,7 +138,7 @@ function App() {
                   provides an interface for searching, comparing, and reserving
                   cars...
                 </p>
-                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                <div className="flex justify-center gap-4 items-center mt-[20px] flex-col md:flex-row">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold ">
                     React
                   </p>
@@ -163,15 +163,15 @@ function App() {
             </div>
 
             <div className="projects flex-col md:flex md:flex-row mt-[30px]">
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
                 <h2>COINDOM (FEBRUARY 2023)</h2>
                 <p>
                   Coindom is a crypto app that allows users to search for
                   information about various cryptocurrencies in real-time.
                 </p>
-                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                <div className="flex justify-center gap-4 items-center mt-[20px] flex-col md:flex-row">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
-                    Resct
+                    React
                   </p>
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
                     Tailwind CSS
@@ -200,13 +200,13 @@ function App() {
                   className="rounded-[20px] scrol_bar"
                 />
               </div>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 mt-[30px] md:mt-auto">
                 <h2>Product (FEBRUARY 2023)</h2>
                 <p>
                   Coindom is a crypto app that allows users to search for
                   information about various cryptocurrencies in real-time.
                 </p>
-                <div className="flex justify-center gap-4 items-center mt-[20px]">
+                <div className="flex justify-center gap-4 items-center mt-[20px] flex-col md:flex-row">
                   <p className="bg-[#FFF] shadow-md p-[8px_12px] rounded-md font-semibold  ">
                     Resct
                   </p>
@@ -295,7 +295,7 @@ function App() {
       <footer className="bg-[#2d2e32] p-[40px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <div className="flex md:justify-between items-center flex-col md:flex-row justify-center">
-            <h3 className="text-[#FFF] font-bold text-[16px]">
+            <h3 className="text-[#FFF] font-bold md:text-[16px] text-[12px]">
               Copyright © 2023. All rights are reserved
             </h3>
             <div className="flex gap-2 items-center mt-[30px] md:mt-auto">
