@@ -33,15 +33,43 @@ function App() {
       <header className="shadow-md   fixed z-30 w-full top-0 bg_header">
         <div className="container max-w-[1100px] mx-auto flex justify-between items-center p-[12px] px-[25px] ">
           <div className="logo">
-            <h2 className="cursor-pointer font-medium md:text-[24px] text-[20px]">
+            <a href="/" className="text-[22px] font-[500]">
               Virkan.dev
-            </h2>
+            </a>
           </div>
           <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden ">
-            <li className="">Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <a
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                href="#home"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                href="#about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                href="#project"
+              >
+                Project
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                href="#contacts"
+              >
+                Contacts
+              </a>
+            </li>
           </ul>
           {/* mobal-menu */}
           <div
@@ -52,7 +80,7 @@ function App() {
           </div>
         </div>
       </header>
-      <section className=" drop-shadow-md">
+      <section id="home" className=" drop-shadow-md">
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
           <div className="flex flex-col-reverse md:flex md:flex-row justify-between mt-[10px]  md:mt-[80px]  ">
             <div className="">
@@ -75,7 +103,9 @@ function App() {
             <div className="avatar mt-[50px] md:mt-auto mx-auto "></div>
           </div>
           <div className="flex gap-[15px]  items-center py-[40px] flex-col md:flex-row">
-            <h3 className="text-[20px] font-medium mb-[10px]">Технический стек</h3>
+            <h3 className="text-[20px] font-medium mb-[10px]">
+              Технический стек
+            </h3>
 
             <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] skils">
               <img src={icon1} alt="" />
@@ -86,7 +116,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="section_2 bg-[#FFFFFF] py-[70px]">
+      <section id="about" className="section_2 bg-[#FFFFFF] py-[70px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <div className="grid md:grid-cols-2 gap-[90px] grid-col-1">
             <div className="rounded-[20px]">
@@ -114,7 +144,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="section_3 bg-[#f9f9f9] py-[70px]">
+      <section id="project" className="section_3 bg-[#f9f9f9] py-[70px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <div className="mb-[50px] ">
             <p className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
@@ -230,7 +260,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="contact bg-[#FFFFFF] py-[70px]">
+      <section id="contacts" className="contact bg-[#FFFFFF] py-[70px]">
         <div className="container max-w-[1100px] mx-auto p-[12px]">
           <p className="text-[#147efb] font-bold text-[18px] text-center md:text-start">
             CONTACT
@@ -320,16 +350,16 @@ function App() {
           </div>
           <ul className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  ">
             <li>
-              <a href="">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="">Project</a>
+              <a href="#project">Project</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
