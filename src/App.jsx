@@ -40,7 +40,7 @@ function App() {
           <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden ">
             <li>
               <a
-                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] "
                 href="#home"
               >
                 Home
@@ -348,7 +348,7 @@ function App() {
               <IoClose className="close-menu" />
             </button>
           </div>
-          <ul className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  ">
+          <ul onClick={() => setModalMenu(false)} className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  ">
             <li>
               <a href="#home">Home</a>
             </li>
