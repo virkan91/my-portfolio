@@ -40,7 +40,7 @@ function App() {
           <ul className=" nav md:flex gap-8 text-[18px] font-medium not-italic hidden ">
             <li>
               <a
-                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] "
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] hover:pb-[6px]"
                 href="#home"
               >
                 Home
@@ -48,7 +48,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] hover:pb-[6px]"
                 href="#about"
               >
                 About
@@ -56,7 +56,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] hover:pb-[6px]"
                 href="#project"
               >
                 Project
@@ -64,7 +64,7 @@ function App() {
             </li>
             <li>
               <a
-                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px]"
+                className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200 hover:border-b-[2px] hover:pb-[6px]"
                 href="#contacts"
               >
                 Contacts
@@ -103,9 +103,7 @@ function App() {
             <div className="avatar mt-[50px] md:mt-auto mx-auto "></div>
           </div>
           <div className="flex gap-[15px]  items-center py-[40px] flex-col md:flex-row">
-            <h3 className="text-[20px] font-medium mb-[10px]">
-              Технический стек
-            </h3>
+            <h3 className="text-[20px] font-medium mb-[10px]  px-[20px]">Skills:</h3>
 
             <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] skils">
               <img src={icon1} alt="" />
@@ -348,7 +346,10 @@ function App() {
               <IoClose className="close-menu" />
             </button>
           </div>
-          <ul onClick={() => setModalMenu(false)} className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  ">
+          <ul
+            onClick={() => setModalMenu(false)}
+            className="flex flex-col  items-center h-full gap-[15px] text-[24px] font-medium  "
+          >
             <li>
               <a href="#home">Home</a>
             </li>
