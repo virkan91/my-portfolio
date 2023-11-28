@@ -10,6 +10,8 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+
 
 import { CiMail } from "react-icons/ci";
 
@@ -22,6 +24,7 @@ import about from "./assets/about-img.webp";
 import emat from "./assets/emat.png";
 import two from "./assets/olis.png";
 import snimok3 from "./assets/snimok3.png";
+import CV from "./assets/CV.pdf"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -80,10 +83,11 @@ function App() {
           </div>
         </div>
       </header>
+
       <section id="home" className=" drop-shadow-md">
         <div className="container max-w-[1100px] mx-auto pt-[80px] p-[20px] ">
           <div className="flex flex-col-reverse md:flex md:flex-row justify-between mt-[10px]  md:mt-[80px]  ">
-            <div className="">
+            <div className="flex flex-col">
               <h1 className="text-[40px] md:text-[53px] text-center md:text-start font-bold mt-[40px] md:mt-0 ">
                 Front-End React Developer
               </h1>
@@ -99,11 +103,24 @@ function App() {
                   <TelegramIcon />
                 </a>
               </div>
+              <div className=" flex items-center mt-[40px] gap-3 justify-center md:justify-start">
+                <a
+                  href="/src/assets/CV.pdf"
+                  download={CV}
+                  className="bg-[#FFF] flex items-center gap-3 p-[10px] rounded-[10px] font-bold not-italic"
+                >
+                  Download CV
+                  <FaCloudDownloadAlt />
+                </a>
+              </div>
             </div>
+
             <div className="avatar mt-[50px] md:mt-auto mx-auto "></div>
           </div>
           <div className="flex gap-[15px]  items-center py-[40px] flex-col md:flex-row">
-            <h3 className="text-[20px] font-medium mb-[10px]  px-[20px]">Skills:</h3>
+            <h3 className="text-[20px] font-medium mb-[10px]  px-[20px]">
+              Skills:
+            </h3>
 
             <div className="grid grid-cols-4 gap-8 items-center bg-white p-[3px] skils">
               <img src={icon1} alt="" />
