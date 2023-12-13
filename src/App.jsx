@@ -22,6 +22,7 @@ import icon3 from "./assets/icon3.png";
 import icon4 from "./assets/icons4.svg";
 import about from "./assets/about-img.webp";
 import emat from "./assets/emat.png";
+import shopping from "./assets/shoping-hub.png"
 import two from "./assets/olis.png";
 import snimok3 from "./assets/snimok3.png";
 import CV from "./assets/CV.pdf"
@@ -172,8 +173,9 @@ function App() {
           <div className="flex flex-col">
             <div className="projects flex-col md:flex md:flex-row ">
               <div className="box_scrol rounded-[20px]">
-                <a target="_blank" href="https://emat.netlify.app/">
-                  <img src={emat} alt="" className=" scrol_bar " />
+                {/* <a target="_blank" href="https://emat.netlify.app/"> */}
+                <a target="_blank" href="https://shoping-hub.vercel.app/">
+                  <img src={shopping} alt="" className=" scrol_bar " />
                 </a>
               </div>
               <div className="flex flex-col gap-5 mt-[30px] md:mt-0">

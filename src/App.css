@@ -110,5 +110,5 @@ p {
   transition: 10s ease-in-out 0s;
 }
 .scrol_bar:hover {
-  transform: translateY(-70%);
+  transform: translateY(-86%);
 }
